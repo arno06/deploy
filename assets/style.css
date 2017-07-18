@@ -1,0 +1,19 @@
+*{font-family:Asap, sans-serif;outline:none;}
+:selection{background-color:#2980b9;color:#fff}
+body{font-size:1.25em;background:#f9f9f9;}
+header{max-width:960px;margin:0 auto;display:flex;padding-top:20px;}
+header div{flex-grow:1;}
+header div a{text-decoration:none;color:#222;font-weight:bold;}
+header div a span.square{display:inline-block;width:30px;height:30px;background-color:#2980b9;transform:rotate(45deg);position:relative;vertical-align:bottom;margin-right:15px;}
+header div a span.square span{display:inline-block;transform:rotate(-45deg);color:#fff;font-size:28px;margin:-1px 0 0 5px;}
+header div a{display:inline-block;height:26px;line-height:26px;}
+.container{max-width:500px;margin:40px auto 0;padding:10px;color:#444;}
+.container form{display:flex;}
+.container form select, .container form input{}
+.container form select{flex-grow: 1;flex-shrink: 1;}
+select, input{padding:10px;}
+input[type="submit"]{border:none;background:#0083ad url('rolling.svg') no-repeat -20px center;transition:all .3s;cursor:pointer;color:#fff;font-weight:bold;}
+input[type="submit"].loading{background:#0083ad url('rolling.svg') no-repeat 5px center;pointer-events: none;padding-left:25px;}
+input[type="submit"]:hover{background: #52c1da url('rolling.svg') no-repeat -20px center;}
+.info{position:absolute;left:50%;top:20px;background: #ffffff;border:solid 2px rgba(0, 0, 127, .2);text-align: center;padding:5px;width:400px;margin-left:-200px;font-size:.6em;pointer-events: none;transition:all .4s;}
+.info.hidden{opacity:0;top:0;}
